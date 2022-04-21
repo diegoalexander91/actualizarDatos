@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "graduados",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

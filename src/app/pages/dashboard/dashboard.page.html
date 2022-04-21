@@ -1,0 +1,225 @@
+<app-head></app-head>
+<ion-content>
+
+  <!-- <ion-row *ngIf="puntaje < 3">
+    <ion-col size="12">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Validacion de seguridad</ion-card-subtitle>
+          <ion-card-title>Estimado {{nombre | number}}, nos preocupamos por tu seguridad, para garantizar que seas tú, debes
+            responder las siguientes preguntas.</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+    </ion-col> 
+
+  </ion-row>-->
+
+
+  <ion-row>
+    <ion-col size="4" size-lg="4" size-md="4" size-sm="12" size-xs="12">
+      <ion-card>
+
+        <ion-card-header>
+          <ion-card-subtitle>Información Personal</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p><b>Nombre:</b> {{nombre}}</p>
+          <p><b>Apellido:</b> {{apellido}}</p>
+          <p><b>Correo Institucional:</b> {{correo}}</p>
+          <p><b>Documento:</b> {{documento}}</p>
+          <p *ngIf="puntaje > 3"><b>ID:</b> {{id}}</p>
+        </ion-card-content>
+
+      </ion-card>
+
+
+      <app-security [Puntaje]="this.puntaje">
+
+      </app-security>
+
+      <ion-card *ngIf="puntaje > 3">
+
+        <ion-card-header>
+          <ion-card-subtitle>Información Académica</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+          <div *ngFor="let academia of academica">
+            <p>
+              <b>Periodo de finalización: </b>{{academia.PeriodoPrograma}}<br>
+              <b>Programa: </b>{{academia.programaAcademicoDescripcion}}<br>
+              <b>Nivel: </b>{{academia.NivelAcademicoDescripcion}}<br>
+              <b>Sede: </b> {{academia.SedeDescripcion}}<br>
+              <b>Rectoría: </b>{{academia.RectoriaDescripcion}}<br>
+            </p>
+            <br>
+          </div>
+        </ion-card-content>
+
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="8" size-lg="8" size-md="8" size-sm="12" size-xs="12">
+
+      <ion-card *ngIf="puntaje >= 3">
+
+        <ion-card-header>
+          <ion-card-subtitle>Modificar información Personal</ion-card-subtitle>
+          <ion-card-title>Gracias por actualizar tus Datos #EstudiantesUNIMINUTO</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+
+          <ion-item *ngIf="!modificar.tel">
+            <ion-checkbox slot="end" [value]="modificar.tel" [(ngModel)]="modificar.tel" mode="ios" color="dark">
+            </ion-checkbox>
+            <ion-label>Teléfono: {{telefono}}</ion-label>
+          </ion-item>
+          <ion-item *ngIf="modificar.tel">
+            <!-- <ion-checkbox slot="end" [(ngModel)]="modificar.tel" mode="ios" color="dark"></ion-checkbox> -->
+            <ion-label position="stacked">Teléfono</ion-label>
+            <ion-input type="number" name='telefono' [(ngModel)]="telefono"></ion-input>
+          </ion-item>
+
+          <ion-item *ngIf="!modificar.cel">
+            <ion-checkbox slot="end" [value]="modificar.cel" [(ngModel)]="modificar.cel" mode="ios" color="dark">
+            </ion-checkbox>
+            <ion-label>Celular: {{celular}}</ion-label>
+          </ion-item>
+          <ion-item *ngIf="modificar.cel">
+            <ion-label position="stacked">Celular</ion-label>
+            <ion-input type="number" name='celular' [(ngModel)]="celular"></ion-input>
+          </ion-item>
+
+          <ion-item *ngIf="!modificar.cor">
+            <ion-checkbox slot="end" [value]="modificar.cor" [(ngModel)]="modificar.cor" mode="ios" color="dark">
+            </ion-checkbox>
+            <ion-label>Correo: {{correo}}</ion-label>
+          </ion-item>
+          <ion-item *ngIf="modificar.cor">
+            <ion-input type="text" name='correo' [(ngModel)]="correo"></ion-input>
+          </ion-item>
+
+          <ion-item *ngIf="!modificar.dir">
+            <ion-checkbox slot="end" [value]="modificar.dir" [(ngModel)]="modificar.dir" mode="ios" color="dark">
+            </ion-checkbox>
+            <ion-label>
+              <b>Tipo de residencia:</b> {{tipoDireccion}}<br>
+              <b>Direccción:</b> {{direccion}}<br>
+              <b>Barrio:</b> {{barrio}}<br>
+              <b>País:</b> {{pais}}<br>
+              <b>Departamento:</b> {{departamento}}<br>
+              <b>Municipio:</b> {{municipio}}
+            </ion-label>
+          </ion-item>
+          <div *ngIf="modificar.dir">
+            <ion-item>
+              <ion-label position="stacked">Tipo de Residencia</ion-label>
+              <ion-select name="tipoDireccion" [(ngModel)]="tipoDireccion">
+                <ion-select-option value="RE">Residencia Rural</ion-select-option>
+                <ion-select-option value="RU">Residencia Urbana</ion-select-option>
+              </ion-select>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="stacked">Departamento</ion-label>
+              <ion-select name="departamento" [(ngModel)]="departamento" (ionChange)="obtenerMinicipio($event)">
+                <ion-select-option *ngFor="let depto of departamentos" [value]="depto.codigo">{{depto.nombre}}
+                </ion-select-option>
+              </ion-select>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="stacked">Municipio</ion-label>
+              <ion-select name="municipio" [(ngModel)]="municipio">
+                <ion-select-option *ngFor="let muni of municipios" [value]="muni.codigo">{{muni.nombre}}
+                </ion-select-option>
+              </ion-select>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="stacked">Direccción</ion-label>
+              <ion-grid fixed>
+                <ion-row>
+                  <ion-col size="6">
+                    <ion-label position="stacked">Tipo de vía</ion-label>
+                    <ion-select name="via" [(ngModel)]="via">
+                      <ion-select-option value="AK">Avenida carrera</ion-select-option>
+                      <ion-select-option value="AUT">Autopista</ion-select-option>
+                      <ion-select-option value="AV">Avenida</ion-select-option>
+                      <ion-select-option value="CRT">Carretera</ion-select-option>
+                      <ion-select-option value="CL">Calle</ion-select-option>
+                      <ion-select-option value="CN">Camino</ion-select-option>
+                      <ion-select-option value="CR">Carrera</ion-select-option>
+                      <ion-select-option value="CRV">Circunvalar</ion-select-option>
+                      <ion-select-option value="DG">Diagonal</ion-select-option>
+                      <ion-select-option value="KM">Kilómetro</ion-select-option>
+                      <ion-select-option value="TV">Transversal</ion-select-option>
+                      <ion-select-option value="VRD">Vereda</ion-select-option>
+                      <ion-select-option value="VTE">Variante</ion-select-option>
+                      <ion-select-option value="ZF">Zona Franca</ion-select-option>
+                    </ion-select>
+                  </ion-col>
+                  <ion-col size="6">
+                    <ion-label position="floating">Número de vía</ion-label>
+                    <ion-input name="numVia" [(ngModel)]="numVia" type="text"></ion-input>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+
+              <ion-grid fixed>
+                <ion-row>
+                  <ion-col size="5">
+                    <ion-label position="floating">Complemento</ion-label>
+                    <ion-input type="text" placeholder="Complemento" name="complementoUno" [(ngModel)]="complementoUno">
+                    </ion-input>
+                  </ion-col>
+                  <ion-col size="1">#</ion-col>
+                  <ion-col size="6">
+                    <ion-label position="floating">Complemento</ion-label>
+                    <ion-input type="text" placeholder="Complemento" name="complementoDos" [(ngModel)]="complementoDos">
+                    </ion-input>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+
+              <ion-grid fixed>
+                <ion-row>
+                  <ion-col size="6">
+                    <ion-label position="floating">Complemento</ion-label>
+                    <ion-select name="tipoComplemento" [(ngModel)]="tipoComplemento">
+                      <ion-select-option *ngFor="let tipoD of tiposDirecciones" [value]="tipoD.codigo">{{tipoD.nombre}}
+                      </ion-select-option>
+                    </ion-select>
+                  </ion-col>
+                  <ion-col size="6">
+                    <ion-label position="floating">Complemento</ion-label>
+                    <ion-input type="text" placeholder="Complemento" name="complementoTres"
+                      [(ngModel)]="complementoTres"></ion-input>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="stacked">Barrio</ion-label>
+              <ion-input type="text" name='barrio' [(ngModel)]="barrio"></ion-input>
+            </ion-item>
+          </div>
+
+          <ion-button expand="full" shape="round" color="success" (click)="guardar()">
+            Actualizar
+          </ion-button>
+
+        </ion-card-content>
+
+      </ion-card>
+
+    </ion-col>
+
+  </ion-row>
+
+</ion-content>

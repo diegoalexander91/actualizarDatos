@@ -1,0 +1,20 @@
+import { Component, OnInit, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-security',
+  templateUrl: './security.page.html',
+  styleUrls: ['./security.page.scss'],
+})
+export class SecurityPage implements OnInit {
+
+
+   @Input() Puntaje: number;
+  constructor() { 
+    console.log(this.Puntaje);
+
+  }
+
+  ngOnInit() {
+  }
+
+}

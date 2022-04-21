@@ -1,0 +1,132 @@
+[{
+    "codigo": 91,
+    "nombre":	"Amazonas"
+},
+{
+    "codigo": 5,
+    "nombre":	"Antioquia"
+},
+{
+    "codigo": 81,
+    "nombre":	"Arauca"
+},
+{
+    "codigo": 8,
+    "nombre":	"Atlántico"
+},
+{
+    "codigo": 11,
+    "nombre":	"Bogotá D.C"
+},
+{
+    "codigo": 13,
+    "nombre":	"Bolivar"
+},
+{
+    "codigo": 15,
+    "nombre":	"Boyacá"
+},
+{
+    "codigo": 17,
+    "nombre":	"Caldas"
+},
+{
+    "codigo": 85,
+    "nombre":	"Casanare"
+},
+{
+    "codigo": 18,
+    "nombre":	"Caquetá"
+},
+{
+    "codigo": 19,
+    "nombre":	"Cauca"
+},
+{
+    "codigo": 20,
+    "nombre":	"Cesar"
+},
+{
+    "codigo": 27,
+    "nombre":	"Chocó"
+},
+{
+    "codigo": 23,
+    "nombre":	"Córdoba"
+},
+{
+    "codigo": 25,
+    "nombre":	"Cundinamarca"
+},
+{
+    "codigo": 94,
+    "nombre":	"Guainia"
+},
+{
+    "codigo": 95,
+    "nombre":	"Guaviare"
+},
+{
+    "codigo": 41,
+    "nombre":	"Huila"
+},
+{
+    "codigo": 44,
+    "nombre":	"La Guajira"
+},
+{
+    "codigo": 47,
+    "nombre":	"Magdalena"
+},
+{
+    "codigo": 50,
+    "nombre":	"Meta"
+},
+{
+    "codigo": 52,
+    "nombre":	"Nariño"
+},
+{
+    "codigo": 54,
+    "nombre":	"Norte de Santander"
+},
+{
+    "codigo": 86,
+    "nombre":	"Putumayo"
+},
+{
+    "codigo": 63,
+    "nombre":	"Quindío"
+},
+{
+    "codigo": 66,
+    "nombre":	"Risaralda"
+},
+{
+    "codigo": 68,
+    "nombre":	"Santander"
+},
+{
+    "codigo": 88,
+    "nombre":	"San Andres"
+},
+{
+    "codigo": 70,
+    "nombre":	"Sucre"
+},
+{
+    "codigo": 73,
+    "nombre":	"Tolima"
+},
+{
+    "codigo": 76,
+    "nombre":	"Valle"
+},
+{
+    "codigo": 97,
+    "nombre":	"Vaupes"
+},
+{
+    "codigo": 99,
+    "nombre":	"Vichada"
+}]

@@ -1,0 +1,317 @@
+[
+    { 
+        "codigo": "AD", "nombre": "Administración"
+    },
+    { 
+        "codigo": "ADL", "nombre": "Adelante"
+    },
+    { 
+        "codigo": "AER", "nombre": "Aeropuerto"
+    },
+    { 
+        "codigo": "AG", "nombre": "Agencia"
+    },
+    { 
+        "codigo": "AGP", "nombre": "Agrupación"
+    },
+    { 
+        "codigo": "AL", "nombre": "Altillo"
+    },
+    { 
+        "codigo": "ALD", "nombre": "Al Lado"
+    },
+    { 
+        "codigo": "ALM", "nombre": "Almacen"
+    },
+    { 
+        "codigo": "AP", "nombre": "Apartamento"
+    },
+    { 
+        "codigo": "APTDO", "nombre": "Apartado"
+    },
+    { 
+        "codigo": "ATR", "nombre": "Atrás"
+    },
+    { 
+        "codigo": "AUT", "nombre": "Autopista"
+    },
+    { 
+        "codigo": "AV", "nombre": "Avenida"
+    },
+    { 
+        "codigo": "AVIAL", "nombre": "Anillo Vial"
+    },
+    { 
+        "codigo": "BG", "nombre": "Bodega"
+    },
+    { 
+        "codigo": "BL", "nombre": "Bloque"
+    },
+    { 
+        "codigo": "BLV", "nombre": "Boulevar"
+    },
+    { 
+        "codigo": "BRR", "nombre": "Barrio"
+    },
+    { 
+        "codigo": "C", "nombre": "Corregimiento"
+    },
+    { 
+        "codigo": "CA", "nombre": "Casa"
+    },
+    { 
+        "codigo": "CAS", "nombre": "Caserio"
+    },
+    { 
+        "codigo": "CC", "nombre": "Centro Comercial"
+    },
+    { 
+        "codigo": "CD", "nombre": "Ciudadela"
+    },
+    { 
+        "codigo": "CEL", "nombre": "Celula"
+    },
+    { 
+        "codigo": "CEN", "nombre": "Centro"
+    },
+    { 
+        "codigo": "CIR", "nombre": "Circular"
+    },
+    { 
+        "codigo": "CLJ", "nombre": "Callejón"
+    },
+    { 
+        "codigo": "CN", "nombre": "Camino"
+    },
+    { 
+        "codigo": "CON", "nombre": "Conjunto Residencial"
+    },
+    { 
+        "codigo": "CONJ", "nombre": "Conjunto"
+    },
+    { 
+        "codigo": "CRT", "nombre": "Carretera"
+    },
+    { 
+        "codigo": "CRV", "nombre": "Circunvalar"
+    },
+    { 
+        "codigo": "CS", "nombre": "Consultorio"
+    },
+    { 
+        "codigo": "DG", "nombre": "Diagonal"
+    },
+    { 
+        "codigo": "DP", "nombre": "Deposito"
+    },
+    { 
+        "codigo": "DPTO", "nombre": "Departamento"
+    },
+    { 
+        "codigo": "DS", "nombre": "Depósito Sotano"
+    },
+    { 
+        "codigo": "ED", "nombre": "Edificio"
+    },
+    { 
+        "codigo": "EN", "nombre": "Entrada"
+    },
+    { 
+        "codigo": "ES", "nombre": "Escalera"
+    },
+    { 
+        "codigo": "ESQ", "nombre": "Esquina"
+    },
+    { 
+        "codigo": "ESTE", "nombre": "Este"
+    },
+    { 
+        "codigo": "ET", "nombre": "Etapa"
+    },
+    { 
+        "codigo": "EX", "nombre": "Exterior"
+    },
+    { 
+        "codigo": "FCA", "nombre": "Finca"
+    },
+    { 
+        "codigo": "GJ", "nombre": "Garaje"
+    },
+    { 
+        "codigo": "GS", "nombre": "Garage Sotano"
+    },
+    { 
+        "codigo": "GT", "nombre": "Glorieta"
+    },
+    { 
+        "codigo": "HC", "nombre": "Hacienda"
+    },
+    { 
+        "codigo": "HG", "nombre": "Hangar"
+    },
+    { 
+        "codigo": "IN", "nombre": "Interior"
+    },
+    { 
+        "codigo": "IP", "nombre": "Inspección De Policia"
+    },
+    { 
+        "codigo": "IPD", "nombre": "Inspección Departamental"
+    },
+    { 
+        "codigo": "IPM", "nombre": "Inspección Municipal"
+    },
+    { 
+        "codigo": "KM", "nombre": "Kilometro"
+    },
+    { 
+        "codigo": "LC", "nombre": "Local"
+    },
+    { 
+        "codigo": "LM", "nombre": "Local Mezzanine"
+    },
+    { 
+        "codigo": "LT", "nombre": "Lote"
+    },
+    { 
+        "codigo": "MD", "nombre": "Módulo"
+    },
+    { 
+        "codigo": "MJ", "nombre": "Mojón"
+    },
+    { 
+        "codigo": "MLL", "nombre": "Muelle"
+    },
+    { 
+        "codigo": "MN", "nombre": "Mezzanine"
+    },
+    { 
+        "codigo": "MZ", "nombre": "Manzana"
+    },
+    { 
+        "codigo": "IA", "nombre": "Vías De Nombre Común"
+    },
+    { 
+        "codigo": "NORTE", "nombre": "Norte"
+    },
+    { 
+        "codigo": "O", "nombre": "Oriente"
+    },
+    { 
+        "codigo": "OCC", "nombre": "Occidente"
+    },
+    { 
+        "codigo": "OESTE", "nombre": "Oeste"
+    },
+    { 
+        "codigo": "OF", "nombre": "Oficina"
+    },
+    { 
+        "codigo": "P", "nombre": "Piso"
+    },
+    { 
+        "codigo": "PA", "nombre": "Parcela"
+    },
+    { 
+        "codigo": "PAR", "nombre": "Parque"
+    },
+    { 
+        "codigo": "PD", "nombre": "Predio"
+    },
+    { 
+        "codigo": "PH", "nombre": "Penhouse"
+    },
+    { 
+        "codigo": "PJ", "nombre": "Pasaje"
+    },
+    { 
+        "codigo": "PL", "nombre": "Planta"
+    },
+    { 
+        "codigo": "PN", "nombre": "Puente"
+    },
+    { 
+        "codigo": "POR", "nombre": "Porteria"
+    },
+    { 
+        "codigo": "POS", "nombre": "Poste"
+    },
+    { 
+        "codigo": "PQ", "nombre": "Parqueadero"
+    },
+    { 
+        "codigo": "PRJ", "nombre": "Paraje"
+    },
+    { 
+        "codigo": "PS", "nombre": "Paseo"
+    },
+    { 
+        "codigo": "PT", "nombre": "Puesto"
+    },
+    { 
+        "codigo": "PW", "nombre": "Park Way"
+    },
+    { 
+        "codigo": "RP", "nombre": "Round Point"
+    },
+    { 
+        "codigo": "SA", "nombre": "Salón"
+    },
+    { 
+        "codigo": "SC", "nombre": "Salón Comunal"
+    },
+    { 
+        "codigo": "SEC", "nombre": "Sector"
+    },
+    { 
+        "codigo": "SL", "nombre": "Solar"
+    },
+    { 
+        "codigo": "SM", "nombre": "Supermanzana"
+    },
+    { 
+        "codigo": "SS", "nombre": "Semisotano"
+    },
+    { 
+        "codigo": "ST", "nombre": "Sótano"
+    },
+    { 
+        "codigo": "SUITE", "nombre": "Suite"
+    },
+    { 
+        "codigo": "SUR", "nombre": "Sur"
+    },
+    { 
+        "codigo": "TER", "nombre": "Terminal"
+    },
+    { 
+        "codigo": "TERPLN", "nombre": "Terraplen"
+    },
+    { 
+        "codigo": "TO", "nombre": "Torre"
+    },
+    { 
+        "codigo": "TZ", "nombre": "Terraza"
+    },
+    { 
+        "codigo": "UN", "nombre": "Unidad"
+    },
+    { 
+        "codigo": "UR", "nombre": "Unidad Residencial"
+    },
+    { 
+        "codigo": "URB", "nombre": "Urbanización"
+    },
+    { 
+        "codigo": "VRD", "nombre": "Vereda"
+    },
+    { 
+        "codigo": "VTE", "nombre": "Variante"
+    },
+    { 
+        "codigo": "ZF", "nombre": "Zona Franca"
+    },
+    { 
+        "codigo": "ZN", "nombre": "Zona"
+    }
+]

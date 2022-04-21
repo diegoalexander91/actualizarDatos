@@ -1,0 +1,72 @@
+<ion-content [fullscreen]="true">
+  
+  <ion-slides [options]="swiperOpts">
+    <ion-slide>
+      
+      <form>
+        <img src="assets/baner/estudiante.png">
+
+        <h1>Apreciado ESTUDIANTE UNIMINUTO</h1>
+        <h3>¡eres muy importante para nosotros!</h3>
+
+        <!-- <p class="texto">
+          Queremos consolidar relaciones más cercanas y en doble vía contigo.
+          Te invitamos a actualizar tus datos; de esta forma disfrutas de información interesante sobre servicios y beneficios preparados para ti y realimentas nuestra Institución para los procesos de calidad y formación integral.  A continuación puedes verificar la información y en caso de requerirlo modificarla con tus datos actuales.
+        </p> -->
+
+        <ion-item>
+          <p>He leído, he sido informado(a), y autorizo a UNIMINUTO el tratamiento de mis datos personales para los fines previamente comunicados y acepto la política de tratamiento de datos personales.*</p>
+          <ion-checkbox slot="end" [(ngModel)]="politica" name="politica" color="success"></ion-checkbox>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Correo institucional</ion-label>
+          <ion-input [(ngModel)]="correo" name="correo" type="text" required>
+          </ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label position="floating">Documento</ion-label>
+          <ion-input [(ngModel)]="documento" name="documento" type="text" required>
+          </ion-input>
+        </ion-item>
+
+        <!-- <ion-item>
+          <ion-label>Fecha de Expedición de documento</ion-label>
+          <ion-datetime displayFormat="DD MM YYYY" (ngModelChange)="expedicion" (ionChange)="fechaExpedicion($event)"></ion-datetime>
+        </ion-item> -->
+
+        <!-- <small>{{expedicion}}</small><br> 
+        <small>{{documento}}</small><br>
+        <small>{{correo}}</small><br>
+        <small>{{politica}}</small><br> -->
+        <p></p>
+
+        <!-- <ion-button expand="large" shape="round" color="primary" (click)="login( $event )"> -->
+        <ion-button expand="large" shape="round" color="primary" (click)="login()">
+          Ingresar
+        </ion-button>
+
+        <ion-grid fixed>
+          <ion-row>
+            <ion-col size="6">
+              <ion-button target="_blank" class="button" color="danger" size="small" fill="clear" href="http://umd.uniminuto.edu/documents/10181/0/Resoluci%C3%B3n+No+1484+Pol%C3%ADtica+Tratamiento+de+Informaci%C3%B3n.pdf/3fc7028e-1530-4c0d-9391-d12c8faef17c">
+                Autorización tratamiento de datos personales
+              </ion-button>
+            </ion-col>
+            <ion-col size="6">
+              <ion-button target="_blank" class="button" color="danger" size="small" fill="clear" href="https://portalweb-uniminuto.s3.us-east-1.amazonaws.com/activos_digitales/DocInstitucionales/Politicas/Apoyo/Resolucion_No_1484_Politica_Tratamiento_de_Informacion.pdf">
+                Política de información
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </form>
+
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>
+
+<app-footer></app-footer>
